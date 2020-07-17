@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%=title %></title>
+  <link rel="stylesheet" href="/style.css">
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  <script>
+    var server_data = {
+      request_id: "<%= global['__requestId'] %>"
+    };
+  </script>
 </head>
 
 <body>
-  <h1>欢迎</h1>
+  <h1>欢迎 <%= global.content %></h1>
   <ul>
     <% users.forEach(function(item){%>
     <li><%=item.name %></li>
@@ -17,9 +23,9 @@
   </ul>
   <h2>ajax数据：</h2>
   api接口
-  <pre id="pre"></pre>
+  <pre id="pre" contenteditable></pre>
   反向代理接口
-  <pre id="pre2"></pre>
+  <pre id="pre2" contenteditable></pre>
   <script>
 
     // api接口
@@ -35,20 +41,8 @@
     }).fail((err) => {
       console.log(err);
     })
-
-    // 反向代理接口
-    $.ajax({
-      url: '/x/web-interface/dynamic/region',
-      type: 'get',
-      dataType: 'json',
-      data: { ps: 12, rid: 1 },
-    }).done((res) => {
-      console.log(res);
-      $('#pre2').html(JSON.stringify(res, null, 4));
-    }).fail((err) => {
-      console.log(err);
-    })
   </script>
+  <script src="/test.js"></script>
 </body>
 
 </html>

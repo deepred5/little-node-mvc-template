@@ -1,3 +1,4 @@
 const demo = require('./demo');
+const static = require('./static');
 
-module.exports = [demo()];
+module.exports = [static, demo()];

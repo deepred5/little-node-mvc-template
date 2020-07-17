@@ -2,6 +2,9 @@ const { Controller } = require('little-node-mvc');
 
 class Home extends Controller {
   async index() {
+    this.ctx.setData({
+      content: '绅士'
+    });
     await this.ctx.render('home', {
       title: 'home',
       users: [

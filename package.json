@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/deepred5/little-node-mvc-template#readme",
   "dependencies": {
+    "koa-static": "^5.0.0",
     "little-node-mvc": "^1.0.2"
   },
   "devDependencies": {
