@@ -1,5 +1,4 @@
 module.exports = {
-	port: 4441,
 	proxy: [
 		{
 			match: '/x/web-interface/*',
@@ -12,4 +11,4 @@ module.exports = {
 			}
 		}
 	]
-};
+}
