@@ -1,0 +1,33 @@
+{
+  "name": "little-node-mvc-template",
+  "version": "1.0.0",
+  "description": "a template for little-node-mvc",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node app.js",
+    "qa": "cross-env NODE_ENV=qa node app.js",
+    "yz": "cross-env NODE_ENV=yz node app.js",
+    "prod": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepred5/little-node-mvc-template.git"
+  },
+  "keywords": [
+    "koa2",
+    "little-node-mvc"
+  ],
+  "author": "deepred5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepred5/little-node-mvc-template/issues"
+  },
+  "homepage": "https://github.com/deepred5/little-node-mvc-template#readme",
+  "dependencies": {
+    "koa-static": "^5.0.0",
+    "little-node-mvc": "^1.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
