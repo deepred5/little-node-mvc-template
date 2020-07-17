@@ -3,7 +3,7 @@
 [little-node-mvc](https://github.com/deepred5/little-node-mvc)框架使用demo
 
 # 使用方法
-```
+```bash
 git clone git@github.com:deepred5/little-node-mvc-template.git
 
 cd little-node-mvc-template
